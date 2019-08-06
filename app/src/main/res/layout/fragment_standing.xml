@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fragment_standing_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fragment_standing_recyclerView"
+        android:background="@color/colorShadow">
+
+        <TextView
+            android:id="@+id/fragment_standing_title_teamName"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/team_names"
+            android:textSize="@dimen/titleTextSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/fragment_standing_title_win"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/fragment_standing_title_lose"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/team_win"
+            android:textSize="@dimen/titleTextSize" />
+
+        <TextView
+            android:id="@+id/fragment_standing_title_lose"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/fragment_standing_title_draw"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/team_lose"
+            android:textSize="@dimen/titleTextSize" />
+
+        <TextView
+            android:id="@+id/fragment_standing_title_draw"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/fragment_standing_title_winRate"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/team_draw"
+            android:textSize="@dimen/titleTextSize" />
+
+        <TextView
+            android:id="@+id/fragment_standing_title_winRate"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/team_winrate"
+            android:textSize="@dimen/titleTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_standing_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_standing_title"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:overScrollMode="never">
+
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.constraint.ConstraintLayout>

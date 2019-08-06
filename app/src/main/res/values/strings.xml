@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Soccer Standing App</string>
+    <string name="team_names">Team Name</string>
+    <string name="team_win">W</string>
+    <string name="team_lose">L</string>
+    <string name="team_draw">D</string>
+    <string name="team_winrate">Win%</string>
+    <string name="team_total">T</string>
+    <string name="team">Team</string>
+    <string name="exitToast">Press back again button to exit the app.</string>
+    <string name="title">Overall Standing</string>
+</resources>
