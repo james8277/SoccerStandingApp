@@ -96,7 +96,7 @@ public class FragmentTeamInfo extends Fragment {
         Collections.sort(allOpponent, new Comparator<VersusTeam>() {
             @Override
             public int compare(VersusTeam o1, VersusTeam o2) {
-                return o1.getTeam().compareTo(o2.getTeam());
+                return Integer.compare(o2.getWin(), o1.getWin());
             }
         });
     }
